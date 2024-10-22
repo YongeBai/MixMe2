@@ -14,7 +14,6 @@
  * limitations under the License.
  */
 import MobileObjectsToolbar from '@/common/components/annotations/MobileObjectsToolbar';
-import MobileEffectsToolbar from '@/common/components/effects/MobileEffectsToolbar';
 import MoreOptionsToolbar from '@/common/components/options/MoreOptionsToolbar';
 
 type Props = {
@@ -25,7 +24,6 @@ type Props = {
 export default function MobileToolbar({tabIndex, onTabChange}: Props) {
   const tabs = [
     <MobileObjectsToolbar key="objects" onTabChange={onTabChange} />,
-    <MobileEffectsToolbar key="effects" onTabChange={onTabChange} />,
     <MoreOptionsToolbar key="more-options" onTabChange={onTabChange} />,
   ];
 
